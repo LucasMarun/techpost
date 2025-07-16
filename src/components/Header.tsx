@@ -51,11 +51,17 @@ const Header = () => {
             <button className="p-2 hover:bg-accent rounded-full transition-colors">
               <Globe className="w-4 h-4 xl:w-5 xl:h-5 text-gray-medium" />
             </button>
-            <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-green text-sm xl:text-base px-3 xl:px-4">
-              <Phone className="w-3 h-3 xl:w-4 xl:h-4 mr-1 xl:mr-2" />
-              <span className="hidden xl:inline">Solicite atendimento</span>
-              <span className="xl:hidden">Contato</span>
-            </Button>
+            <a
+              href="https://wa.me/558186506056"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-green text-sm xl:text-base px-3 xl:px-4">
+                <Phone className="w-3 h-3 xl:w-4 xl:h-4 mr-1 xl:mr-2" />
+                <span className="hidden xl:inline">Solicite atendimento</span>
+                <span className="xl:hidden">Contato</span>
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -96,10 +102,17 @@ const Header = () => {
               </div>
               
               {/* Mobile contact button */}
-              <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-green mt-3 sm:mt-4 w-full py-3 sm:py-4 text-base sm:text-lg">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Solicite atendimento
-              </Button>
+              <a
+                href="https://wa.me/558186506056"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-green mt-3 sm:mt-4 w-full py-3 sm:py-4 text-base sm:text-lg">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  Solicite atendimento
+                </Button>
+              </a>
             </nav>
           </div>
         )}
