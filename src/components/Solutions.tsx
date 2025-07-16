@@ -47,68 +47,65 @@ const Solutions = () => {
   ];
 
   return (
-    <section id="solucoes" className="py-20 bg-accent">
-      <div className="container mx-auto px-4">
-        <AnimatedSection className="text-center mb-16" direction="up" distance={50}>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section id="solucoes" className="py-12 sm:py-16 lg:py-20 bg-accent">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="text-center mb-12 sm:mb-16" direction="up" distance={50}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-2">
             <AnimatedSplitText 
               text="Conheça nossas soluções"
               stagger={0.06}
               delay={0.8}
-              
             />
           </h2>
           <AnimatedSection direction="up" distance={30} delay={0.8}>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4">
               Oferecemos um portfólio completo de serviços para eletromobilidade
             </p>
           </AnimatedSection>
         </AnimatedSection>
 
-        <AnimatedGrid 
-          cols={3}
-          stagger={0.15}
-          delay={1.2}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {solutions.map((solution, index) => (
-            <Card key={index} className="bg-background shadow-card hover:shadow-elevated transition-all duration-300 group cursor-pointer">
-              <CardHeader className="text-center">
+            <Card key={index} className="bg-background shadow-card hover:shadow-elevated transition-all duration-300 group cursor-pointer h-full flex flex-col">
+              <CardHeader className="text-center pb-3 sm:pb-4">
                 <AnimatedIcon 
-                  className="mx-auto mb-4 w-16 h-16 bg-primary rounded-full text-primary-foreground group-hover:bg-primary/90 transition-colors duration-300"
+                  className="mx-auto mb-3 sm:mb-4 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-primary rounded-full text-primary-foreground group-hover:bg-primary/90 transition-colors duration-300"
                   hoverRotation={15}
                   delay={index * 0.1}
                 >
-                  <solution.icon className="w-8 h-8" />
+                  <solution.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
                 </AnimatedIcon>
-                <CardTitle className="text-xl mb-2 text-foreground">
+                <CardTitle className="text-lg sm:text-xl lg:text-2xl mb-2 text-foreground leading-tight px-2">
                   {solution.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
+              <CardContent className="text-center flex-1 flex flex-col">
                 {solution.image && (
-                  <div className="mb-4 rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                  <div className="mb-3 sm:mb-4 rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
                     <img
                       src={solution.image}
                       alt={solution.title}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-40 sm:h-44 lg:h-48 object-cover"
                     />
                   </div>
                 )}
-                <p className="text-muted-foreground mb-6">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 flex-1 px-2 leading-relaxed">
                   {solution.description}
                 </p>
                 {solution.hasButton && (
-                  <AnimatedButton 
-                    variant="outline" 
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                  >
-                    Ver mais
-                  </AnimatedButton>
+                  <div className="mt-auto px-2">
+                    <AnimatedButton 
+                      variant="outline" 
+                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full sm:w-auto px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base"
+                    >
+                      Ver mais
+                    </AnimatedButton>
+                  </div>
                 )}
               </CardContent>
             </Card>
           ))}
-        </AnimatedGrid>
+        </div>
       </div>
     </section>
   );

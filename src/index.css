@@ -213,6 +213,66 @@
     .mobile-reduce-distance {
       transform: translateY(20px) !important;
     }
+
+    /* Melhorias de responsividade para mobile */
+    .container {
+      max-width: 100% !important;
+    }
+
+    /* Ajustes para textos pequenos em mobile */
+    h1 {
+      line-height: 1.2 !important;
+    }
+
+    h2 {
+      line-height: 1.3 !important;
+    }
+
+    /* Ajustes para botões em mobile */
+    button {
+      min-height: 44px;
+      touch-action: manipulation;
+    }
+
+    /* Melhor espaçamento para touch */
+    a, button {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  /* Otimização para tablets */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  /* Scroll suave */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Melhor legibilidade em dispositivos pequenos */
+  @media (max-width: 640px) {
+    body {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Ajuste para imagens responsivas */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Cards mais compactos em mobile */
+    .card {
+      margin-bottom: 1rem;
+    }
   }
 }
 
