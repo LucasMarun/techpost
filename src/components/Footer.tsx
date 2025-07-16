@@ -85,14 +85,14 @@ const Footer = () => {
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href="https://wa.me/558186506056"
-          className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-green hover:scale-110 transition-transform duration-300"
+          className="w-14 h-14 bg-primary rounded-full flex items-center justify-center shadow-green hover:scale-110 transition-transform duration-300"
           target="_blank"
           rel="noopener noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
-            className="w-7 h-7 text-secondary-foreground"
+            className="w-7 h-7 text-primary-foreground"
           >
             <path
               d="M16 0C7.163 0 0 7.163 0 16c0 2.837.74 5.51 2.03 7.84L0 32l8.32-2.03A15.92 15.92 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.6c-2.56 0-5.01-.66-7.16-1.82l-.51-.29-4.92 1.2 1.2-4.92-.29-.51A13.56 13.56 0 0 1 2.4 16c0-7.52 6.08-13.6 13.6-13.6S29.6 8.48 29.6 16 23.52 29.6 16 29.6zm7.36-10.24c-.41-.2-2.42-1.2-2.8-1.34-.38-.14-.66-.2-.94.2-.28.39-1.08 1.34-1.32 1.62-.24.28-.48.31-.88.1-.41-.2-1.72-.63-3.28-2.02-1.21-1.08-2.02-2.42-2.26-2.82-.24-.41-.03-.63.18-.83.18-.18.41-.48.62-.72.21-.24.28-.41.42-.68.14-.28.07-.51-.03-.72-.1-.2-.94-2.28-1.28-3.1-.34-.82-.68-.71-.94-.72-.24-.01-.51-.01-.78-.01-.28 0-.72.1-1.1.51-.38.41-1.44 1.41-1.44 3.44s1.48 3.98 1.68 4.26c.2.28 2.92 4.46 7.08 6.26.99.43 1.76.68 2.36.87.99.31 1.9.27 2.62.16.8-.12 2.42-.99 2.76-1.94.34-.95.34-1.77.24-1.94-.1-.17-.38-.28-.8-.48z"

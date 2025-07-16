@@ -15,12 +15,12 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    /* Cor principal laranja Energy Tech Post */
-    --primary: 237 97% 63%; /* #FF8533 - Laranja principal */
+    /* Cor principal verde Energy Tech Post */
+    --primary: 142 76% 36%; /* #16A34A - Verde principal */
     --primary-foreground: 0 0% 100%; /* Branco */
 
-    /* Verde secundário para sustentabilidade */
-    --secondary: 142 76% 36%; /* #16A34A - Verde sustentável */
+    /* Laranja secundário para acentos */
+    --secondary: 25 95% 53%; /* #FF8533 - Laranja acentos */
     --secondary-foreground: 0 0% 100%; /* Branco */
 
     /* Cinzas para elementos neutros */
@@ -36,7 +36,7 @@
 
     --border: 240 5.9% 90%; /* Cinza borda */
     --input: 240 5.9% 90%; /* Cinza input */
-    --ring: 237 97% 63%; /* Laranja para focus */
+    --ring: 142 76% 36%; /* Verde para focus */
 
     /* Cores personalizadas Energy Tech Post */
     --gray-light: 0 0% 97%; /* #F7F7F7 */

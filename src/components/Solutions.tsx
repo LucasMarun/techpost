@@ -54,7 +54,8 @@ const Solutions = () => {
             <AnimatedSplitText 
               text="Conheça nossas soluções"
               stagger={0.06}
-              delay={0.2}
+              delay={0.8}
+              
             />
           </h2>
           <AnimatedSection direction="up" distance={30} delay={0.8}>

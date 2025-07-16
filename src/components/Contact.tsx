@@ -122,7 +122,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-orange"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-green"
                 >
                   <Send className="w-4 h-4 mr-2" />
                   Enviar

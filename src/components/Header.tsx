@@ -15,17 +15,17 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-4">
+    <header className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm shadow-md">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src={logoEnergy} 
               alt="Energy Tech Post" 
-              className="h-8 w-auto mr-3"
+              className="h-8 w-auto mr-0 md:mr-3"
             />
-            <h1 className="text-2xl font-bold text-primary">Energy Tech Post</h1>
+            <h1 className="text-2xl font-bold text-primary ml-2">Energy Tech Post</h1>
           </div>
 
           {/* Desktop Menu */}
@@ -57,16 +57,16 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden flex items-center justify-center w-12 h-12 bg-white shadow-lg rounded-full border border-gray-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? <X className="w-7 h-7 text-primary" /> : <Menu className="w-7 h-7 text-primary" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border">
+          <div className="md:hidden mt-4 py-4 border-t border-border bg-white rounded-lg shadow-lg">
             <nav className="flex flex-col space-y-4">
               {menuItems.map((item) => (
                 <a
