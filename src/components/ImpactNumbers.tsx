@@ -25,11 +25,7 @@ const ImpactNumbers = () => {
       <div className="container mx-auto px-4">
         <AnimatedSection className="text-center mb-16" direction="up" distance={50}>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            <AnimatedSplitText 
-              text="Nosso impacto em números"
-              stagger={0.05}
-              delay={0.2}
-            />
+            Nosso impacto em números
           </h2>
           <AnimatedSection direction="up" distance={30} delay={0.8}>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
