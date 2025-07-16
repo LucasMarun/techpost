@@ -1,11 +1,11 @@
 import { ArrowRight } from 'lucide-react';
-import heroImage from '@/assets/banner1.jpeg';
+import heroImage from '@/assets/hero-electrical-panel.jpg';
 import { AnimatedSection, AnimatedButton, AnimatedIcon } from '@/components/animations';
 import { TypewriterTitle } from '@/components/animations/TypewriterTitle';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gray-dark">
+    <section id="inicio" className="relative min-h-[60vh] sm:min-h-[80vh] lg:min-h-screen flex items-center justify-center bg-gray-dark py-8 sm:py-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -25,7 +25,7 @@ const Hero = () => {
           duration={1}
         >
           <TypewriterTitle delay={0.5} stagger={0.02}>
-            <h1 className=" text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight px-2 sm:px-4">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight px-2 sm:px-4">
               Eletroposto e estação de recarga livre de franquia e taxas mensal, com manutenção preventiva e corretiva incluso, sendo monitorada 24h.
             </h1>
           </TypewriterTitle>
@@ -58,7 +58,7 @@ const Hero = () => {
               >
                 <AnimatedButton 
                   size="lg" 
-                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-green text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 flex items-center justify-center min-h-[56px] sm:min-h-[64px]"
+                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-green text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 flex items-center justify-center min-h-[44px] sm:min-h-[56px]"
                 >
                   Solicitar agora
                   <AnimatedIcon className="ml-2" hoverRotation={15}>

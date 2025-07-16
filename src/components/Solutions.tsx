@@ -50,12 +50,8 @@ const Solutions = () => {
     <section id="solucoes" className="py-12 sm:py-16 lg:py-20 bg-accent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-12 sm:mb-16" direction="up" distance={50}>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-2">
-            <AnimatedSplitText 
-              text="Conheça nossas soluções"
-              stagger={0.06}
-              delay={0.8}
-            />
+          <h2 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-2 relative">
+            Conheça nossas soluções
           </h2>
           <AnimatedSection direction="up" distance={30} delay={0.8}>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4">
