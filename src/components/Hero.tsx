@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import heroImage from '@/assets/hero-electrical-panel.jpg';
+import heroImage from '@/assets/banner1.jpeg';
 import { AnimatedSection, AnimatedButton, AnimatedIcon } from '@/components/animations';
 import { TypewriterTitle } from '@/components/animations/TypewriterTitle';
 
