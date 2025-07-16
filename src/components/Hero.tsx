@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import heroImage from '@/assets/hero-electrical-panel.jpg';
+import heroImage from '@/assets/banner1.jpeg';
 import { AnimatedSection, AnimatedButton, AnimatedIcon } from '@/components/animations';
 import { TypewriterTitle } from '@/components/animations/TypewriterTitle';
 
@@ -25,7 +25,7 @@ const Hero = () => {
           duration={1}
         >
           <TypewriterTitle delay={0.5} stagger={0.02}>
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight px-2 sm:px-4">
+            <h1 className=" text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6 lg:mb-8 leading-tight px-2 sm:px-4">
               Eletroposto e estação de recarga livre de franquia e taxas mensal, com manutenção preventiva e corretiva incluso, sendo monitorada 24h.
             </h1>
           </TypewriterTitle>
