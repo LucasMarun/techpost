@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Navigation Menu */}
+          
           <div>
             <h4 className="text-xl font-semibold mb-6 text-primary">Menu</h4>
             <nav className="space-y-3">
