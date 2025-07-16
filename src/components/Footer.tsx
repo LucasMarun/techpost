@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail className="w-4 h-4 mr-2 text-primary" />
-                contato@energytechpost.vercel.com
+                contato@energytechpost.vercel.com.br
               </div>
             </div>
           </div>
